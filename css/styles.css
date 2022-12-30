@@ -155,13 +155,28 @@ header {
 /*hero*/
 
 .hero {
-    text-align: center;
-    background-color: #2E2F42;
+    text-align: center;  
     padding-top:192px;
     padding-bottom:192px;
+
     
 }
 
+
+.overlay {
+    background-image: linear-gradient(
+        to right,
+         rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/hero\ image.jpg);
+    max-width: 1440px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #2E2F42; 
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
 
 .hero-title {
     color: #FFFFFF;
@@ -174,7 +189,7 @@ header {
     margin-top: 0;
     margin-bottom: 48px;
    
-    /* background-color:teal; */
+    
 }
 
 
@@ -187,7 +202,7 @@ header {
     line-height: 1.2;
     /* identical to box height, or 120% */
     letter-spacing: 0.02em;
-    margin-top: 0px;
+    margin-top: 8px;
     margin-bottom: 8px;
 }
 
@@ -212,7 +227,6 @@ header {
     width: 264px;
 }
 
-
 /* Cкидаємо margin для <p> секції */
 .section p {
     margin-top: 0;
@@ -235,6 +249,23 @@ header {
     
    
 }
+
+.benefits {
+    display: inline-flex;
+    width: 264px;
+    height: 112px;
+    background-color:#F4F4FD ;
+    border-radius: 4px;
+    justify-content: center; 
+    align-items: center;
+        
+}
+
+.benefits-icon {
+    width: 64px;
+    height: 64px;
+}
+
 /* Список другої секції */
 .second-section {
     display: flex;
@@ -277,6 +308,7 @@ header {
     padding-top: 120px;
     padding-bottom: 120px;
 }
+
 /* Список третьої секції */
 .third-section {
     display: flex;
@@ -295,6 +327,40 @@ header {
     margin-top: 32px;
     
 }
+/* Іконки соц. мереж секції Our Team */
+
+.team-icon {
+    width: 16px;
+    height: 16px;
+    
+    
+}
+
+.customers-title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 40px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    margin-top: 132px;
+    margin-bottom: 0;
+    text-align: center;
+    margin-bottom: 72px;
+
+}
+
+ .social-network {
+     display: inline-flex;
+     justify-content: center;
+     align-items: center;
+     width: 40px;
+     height: 40px;
+     background-color: var(--accent-color);
+     border-radius: 50%;
+     margin-left: 14px;
+     margin-bottom: 32px;
+ }
+
 /* Список четвертої секції */
 .fourth-section {
     display: flex;
@@ -320,15 +386,27 @@ header {
 
 .flex-element {
     margin-top: 48px;
+    
+}
+/* Ховер карток портфоліо */
+.card-hover:hover,.card-hover:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    cursor: pointer;
+
+}
+/* Ховер карток портфоліо */
+.flex-element:hover,.flex-element:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    cursor: pointer;
 }
 
 .portfolio-card {
     margin-top: 32px;
 }
-.stylized-paragraph {
+ .stylized-paragraph {
     margin-top: 0;
-    padding-bottom: 32px;
-}
+    padding-bottom: 8px;
+} 
 
 
 
@@ -338,6 +416,52 @@ header {
     box-sizing: border-box;
     border-bottom: 0.5px #F4F4FD;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+/* Оформлення п'ятої секції */
+.customers-title {
+    margin-top: 130px;
+    margin-bottom: 72px;
+}
+
+.customer {
+    display: inline-flex;
+    width: 168px;
+    height: 88px;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
+}
+
+.customers {
+    padding-bottom: 120px;
+
+}
+/* Ховер лого клієнтів */
+.customer:hover {
+    border: 1px solid #4D5AE5;
+    border-radius: 4px;
+
+}
+/* Зображення лого клієнтів */
+.client {
+    /* max-width: 94px;
+    max-height: 52px; */
+    fill: #8E8F99;
+
+}
+/* Ховер лого клієнтів */
+.client:hover {
+    fill: var(--accent-color);
+
+}
+/* Список секції Customers */
+.sixth-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
 }
 
 /* Footer */
@@ -356,8 +480,6 @@ header {
     letter-spacing: 0.03em;
     /* identical to box height, or 133% */
     
-       
-
 }
 
 .logo-footer>span {
@@ -379,6 +501,94 @@ header {
    
 }
 
+.social-media {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.social-media>p {
+    margin-top: 0;
+    margin-left: 269px;
+}
+
+.footer-info {
+    display: flex;
+
+
+}
+
+.footer-icon {
+    width: 24px;
+    height: 24px;
+
+
+}
+/* Іконки соц. мереж footer */
+.footer-icons-instagram {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    margin-left: 120px;
+    margin-top: 16px;
+}
+
+ .footer-icons-twitter {
+     display: inline-flex;
+     width: 40px;
+     height: 40px;
+     justify-content: center;
+     align-items: center;
+     background: rgba(255, 255, 255, 0.1);
+     border-radius: 50%;
+     margin-left: 16px;
+     margin-top: 16px;
+ }
+
+.footer-icons-facebook {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    margin-left: 16px;
+    margin-top: 16px;
+}
+
+.footer-icons-linkedin {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    margin-left: 16px;
+    margin-top: 16px;
+}
+
+.footer-icons-instagram:hover {
+    background: #31D0AA;
+}
+
+.footer-icons-twitter:hover {
+    background: #31D0AA;
+}
+
+.footer-icons-facebook:hover {
+    background: #31D0AA;
+}
+
+.footer-icons-linkedin:hover {
+    background: #31D0AA;
+}
+
 /* Оформлення кнопки Order service */
 
 .filter-btn {
@@ -395,12 +605,14 @@ header {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);  
     border-radius: 4px;  
     border: 1px solid transparent ;
+    
 }
 
 .filter-btn:hover,.filter-btn:focus
 {  
     color: var(--accent-color);
-    background-color: var(--white-color);
+    background-color:#404BBF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     cursor: pointer;
 
 
@@ -415,7 +627,6 @@ header {
     font-size: 16px;
     line-height: 1,5;
     letter-spacing: 0.04em;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -429,6 +640,7 @@ header {
     color: var(--white-color);
     background-color: #4D5AE5;
     cursor: pointer;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Блокова модель */
@@ -436,22 +648,6 @@ header {
 *, ::after , ::before {
     box-sizing: border-box;
 }
-
-
-/* .overlay {
-    max-width: 1440px;
-    height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    outline: 1px solid tomato;
-} */
-
-
-
-
-
-
-
 
 /*колір основного тексту #2E2F42*/
 
